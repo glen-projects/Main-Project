@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-08-04T19:08:56 GST" name="Default suite" finished-at="2025-08-04T19:09:08 GST" duration-ms="12189">
+    <groups>
+    </groups>
+    <test started-at="2025-08-04T19:08:56 GST" name="Default test" finished-at="2025-08-04T19:09:08 GST" duration-ms="12189">
+      <class name="testScript.HomeTest">
+        <test-method is-config="true" signature="initialiseBrowser()[pri:0, instance:testScript.HomeTest@692f203f]" started-at="2025-08-04T19:08:56 GST" name="initialiseBrowser" finished-at="2025-08-04T19:09:03 GST" duration-ms="7353" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method signature="verifyWhetherUserIsAbleToSuccessfullyLogout()[pri:0, instance:testScript.HomeTest@692f203f]" started-at="2025-08-04T19:09:03 GST" name="verifyWhetherUserIsAbleToSuccessfullyLogout" finished-at="2025-08-04T19:09:08 GST" duration-ms="4743" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWhetherUserIsAbleToSuccessfullyLogout -->
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:testScript.HomeTest@692f203f]" started-at="2025-08-04T19:09:08 GST" name="browserClose" finished-at="2025-08-04T19:09:08 GST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+      </class> <!-- testScript.HomeTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
