@@ -1,9 +1,14 @@
 package automationCore;
 
+import java.io.IOException;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+
+import utilities.ScreenshotUtility;
 
 public class Base {
 
@@ -19,9 +24,14 @@ public WebDriver driver;
 	}
 	
 	@AfterMethod
-	public void browserClose() 
+	public void driverQuit(ITestResult iTestResult) throws IOException 
 	{
-		//driver.close(); 
-		//driver.quit(); 
+	if(iTestResult.getStatus()==ITestResult.FAILURE)
+	{
+	ScreenshotUtility screenShot=new ScreenshotUtility();
+	screenShot.getScreenshot(driver, iTestResult.getName());
+	}
+	driver.quit();
+
 	}
 }
