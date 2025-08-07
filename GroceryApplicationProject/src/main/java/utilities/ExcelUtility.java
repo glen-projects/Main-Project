@@ -16,7 +16,7 @@ public class ExcelUtility {
 	
 	public static String getStringData(int a, int b, String sheet) throws IOException {
 		
-		f=new FileInputStream("D:\\Java Project\\GroceryApplicationProject\\src\\test\\resources\\TestData.xlsx");
+		f=new FileInputStream("D:\\Git\\GroceryApplicationProject\\GroceryApplicationProject\\src\\test\\resources\\TestData.xlsx");
 		w= new XSSFWorkbook(f);
 		s= w.getSheet(sheet);
 		XSSFRow r = s.getRow(a);

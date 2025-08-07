@@ -2,6 +2,7 @@ package testScript;
 
 
 import java.io.IOException;
+import java.time.Duration;
 
 import org.testng.annotations.Test;
 
@@ -11,7 +12,7 @@ import utilities.ExcelUtility;
 
 public class LoginTest extends Base {
 	
-	@Test
+	@Test(priority=1, description="Verify whether user is able to login with valid credentials")
 	public void verifyUserLoginWithValidCredentials() throws IOException
 	{
 		
@@ -23,7 +24,7 @@ public class LoginTest extends Base {
 		loginpage.clickOnSignInButton();
 	}
 	
-	@Test
+	@Test(priority=2)
 	public void verifyLoginWithValidUsernameInvalidPassword() throws IOException
 	{
 		String username1=ExcelUtility.getStringData(1, 0, "LoginPage");
@@ -32,9 +33,10 @@ public class LoginTest extends Base {
 		loginpage.enterUserNameOnUserNameField(username1);
 		loginpage.enterPasswordOnPasswordField(password1);
 		loginpage.clickOnSignInButton();
+		
 	}
 	
-	@Test
+	@Test(priority=3)
 	public void verifyLoginWithIncorrectUsernameValidPassword() throws IOException
 	{
 		String username1=ExcelUtility.getStringData(2, 0, "LoginPage");
@@ -45,7 +47,7 @@ public class LoginTest extends Base {
 		loginpage.clickOnSignInButton();
 	}
 	
-	@Test
+	@Test(priority=4)
 	public void verifyLoginWithInvalidUsernameAndPassword() throws IOException
 	{
 		String username1=ExcelUtility.getStringData(3, 0, "LoginPage");
