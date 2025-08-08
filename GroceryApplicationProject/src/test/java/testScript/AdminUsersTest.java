@@ -13,7 +13,7 @@ import utilities.RandomDataUtility;
 
 public class AdminUsersTest extends Base{
 	
-	@Test
+	@Test(description = "Verify whether user is able to create new user")
 	public void verifyWhetherUserIsAbleToCreateNewUser() throws IOException {
 		
 		String username1=ExcelUtility.getStringData(0, 0, "LoginPage");
@@ -41,7 +41,7 @@ public class AdminUsersTest extends Base{
 		
 	}
 	
-	@Test
+	@Test(description = "Verify whether user is able to search user")
 	public void verifyWhetherUserIsAbleToSearchUser() throws IOException {
 		
 		String username1=ExcelUtility.getStringData(0, 0, "LoginPage");
@@ -62,7 +62,7 @@ public class AdminUsersTest extends Base{
 		adminpage.clickOnSearchButton();
 	}
 	
-	@Test
+	@Test(description="Verify whether user is able to reset")
 	public void verifyWhetherUserIsAbleToReset() throws IOException {
 		
 		String username1=ExcelUtility.getStringData(0, 0, "LoginPage");
