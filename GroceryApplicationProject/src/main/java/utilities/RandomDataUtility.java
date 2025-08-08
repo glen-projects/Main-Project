@@ -24,6 +24,7 @@ public class RandomDataUtility {
 	public String createRandomMail() {
 		
 		return faker.internet().emailAddress();
+		
 	}
 
 }

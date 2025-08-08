@@ -2,31 +2,31 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-07T19:28:13 GST" name="Default suite" finished-at="2025-08-07T19:28:29 GST" duration-ms="16327">
+  <suite started-at="2025-08-08T01:32:22 GST" name="Default suite" finished-at="2025-08-08T01:32:29 GST" duration-ms="6725">
     <groups>
     </groups>
-    <test started-at="2025-08-07T19:28:13 GST" name="Default test" finished-at="2025-08-07T19:28:29 GST" duration-ms="16327">
-      <class name="testScript.AdminUsersTest">
-        <test-method is-config="true" signature="initialiseBrowser()[pri:0, instance:testScript.AdminUsersTest@41d477ed]" started-at="2025-08-07T19:28:13 GST" name="initialiseBrowser" finished-at="2025-08-07T19:28:18 GST" duration-ms="5164" status="PASS">
+    <test started-at="2025-08-08T01:32:22 GST" name="Default test" finished-at="2025-08-08T01:32:29 GST" duration-ms="6725">
+      <class name="testScript.ManageNewsTest">
+        <test-method is-config="true" signature="initialiseBrowser()[pri:0, instance:testScript.ManageNewsTest@78691363]" started-at="2025-08-08T01:32:22 GST" name="initialiseBrowser" finished-at="2025-08-08T01:32:26 GST" duration-ms="3664" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialiseBrowser -->
-        <test-method signature="verifyWhetherUserIsAbleToCreateNewUser()[pri:0, instance:testScript.AdminUsersTest@41d477ed]" started-at="2025-08-07T19:28:18 GST" name="verifyWhetherUserIsAbleToCreateNewUser" finished-at="2025-08-07T19:28:28 GST" duration-ms="9614" status="PASS">
+        <test-method signature="verifyWhetherUserIsAbleToSearchNews()[pri:0, instance:testScript.ManageNewsTest@78691363]" started-at="2025-08-08T01:32:26 GST" name="verifyWhetherUserIsAbleToSearchNews" finished-at="2025-08-08T01:32:28 GST" duration-ms="2828" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyWhetherUserIsAbleToCreateNewUser -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScript.AdminUsersTest@41d477ed]" started-at="2025-08-07T19:28:28 GST" name="driverQuit" finished-at="2025-08-07T19:28:29 GST" duration-ms="1453" status="PASS">
+        </test-method> <!-- verifyWhetherUserIsAbleToSearchNews -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScript.ManageNewsTest@78691363]" started-at="2025-08-08T01:32:28 GST" name="driverQuit" finished-at="2025-08-08T01:32:29 GST" duration-ms="199" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyWhetherUserIsAbleToCreateNewUser status=SUCCESS method=AdminUsersTest.verifyWhetherUserIsAbleToCreateNewUser()[pri:0, instance:testScript.AdminUsersTest@41d477ed] output={null}]]]>
+                <![CDATA[[TestResult name=verifyWhetherUserIsAbleToSearchNews status=SUCCESS method=ManageNewsTest.verifyWhetherUserIsAbleToSearchNews()[pri:0, instance:testScript.ManageNewsTest@78691363] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverQuit -->
-      </class> <!-- testScript.AdminUsersTest -->
+      </class> <!-- testScript.ManageNewsTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
